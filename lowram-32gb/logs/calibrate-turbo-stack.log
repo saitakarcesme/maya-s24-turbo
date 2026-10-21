@@ -1,0 +1,19 @@
+Project Maya v1.1.20 - GLM-5.3-Flash or DeepSeek-V4.1-Flash-1017 on your own GPU(s).
+
+  Tuning Maya for this PC: the output speed is measured with a few splits of the work between the CPU and
+  the PCIe link, and with fewer CPU threads. It takes about 10-15 minutes (the model loads first); the PC is
+  busy meanwhile.
+  Loading the model for the measurements (it reads the experts into RAM and VRAM first) ...
+[maya] starting the engine: reading the model's weights ...
+[maya] still starting (20 s) - please wait ...
+    the engine's own split (PCIe share 0.60): 3.0 tok/s
+    PCIe share 0.00: 2.6 tok/s
+    PCIe share 0.10: 4.3 tok/s
+    PCIe share 0.25: 1.4 tok/s
+    5 CPU threads: 3.8 tok/s
+    4 CPU threads: 5.7 tok/s
+    3 CPU threads: 2.5 tok/s
+    confirming against the engine's own settings ...
+    the engine's own disk reads (8 pieces an expert part): 7.6 tok/s
+    4 pieces: 5.0 tok/s
+  [ok] tuned for this PC: the engine's own settings are already the fastest here (3.8 tok/s)

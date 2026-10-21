@@ -1,0 +1,4 @@
+13 tok in 1.7s = 7.5 t/s (wall, incl. prefill)
+2000 tok in 69.5s = 28.8 t/s (wall, incl. prefill)
+2000 tok in 70.9s = 28.2 t/s (wall, incl. prefill)
+2000 tok in 111.2s = 18.0 t/s (wall, incl. prefill)

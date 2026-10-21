@@ -99,6 +99,14 @@ agent-session/    PLAN.md, the agent driver, session/stage logs
 
 ## History log
 
+### 2026-10-21 — fork: the same 2× RTX 3090 with only 32 GB of RAM ([`lowram-32gb/`](lowram-32gb/))
+
+Replication on a 32 GB-RAM rig (i5-14400F, GPU1 on PCIe 4.0 x4, DRAM-less NVMe), project-maya v1.1.20:
+stock **11.7** t/s, this repo's stack without `RAM_RESIDENT` **8.0** (`PROMOTE_MIN=6` starves VRAM promotion
+when misses come from the SSD), exact low-RAM tuning (`DISK_READERS=8`) **12.2**, plus `DISK_SKIP_W=0.12` +
+`MISS_SKIP_W=0.14` **29.1** official / **35** thinking-on. functest 8/8. Without the RAM tier the 50-60 t/s
+does not carry over; RAM is the lever.
+
 ### 2026-10-20/21 — DeepSeek-V4.1-Flash-1017: 10.4 → 33-35 t/s decode, 144 → 783 t/s prefill
 
 The same rig serves the 748B-parameter MoE (40×384 experts, Engram tables) from local files

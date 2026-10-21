@@ -1,0 +1,8 @@
+[D-prod] prose: 190 tok | 29.9 t/s | 6.3s
+[D-prod] facts: 297 tok | 30.3 t/s | 9.8s
+[D-prod] code: 444 tok | 45.5 t/s | 9.8s
+[D-prod] MEAN: 35.2 t/s
+[D-prod-run2] prose: 202 tok | 29.7 t/s | 6.8s
+[D-prod-run2] facts: 201 tok | 35.3 t/s | 5.7s
+[D-prod-run2] code: 597 tok | 42.1 t/s | 14.2s
+[D-prod-run2] MEAN: 35.7 t/s

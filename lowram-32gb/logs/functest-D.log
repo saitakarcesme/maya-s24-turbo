@@ -1,0 +1,10 @@
+PASS chat-basic (1.9s) LANE OK
+PASS tool-forced (6.2s) get_weather({"city":"Tokyo","unit":"celsius"})
+PASS tool-zero-arg (4.7s) zero-arg OK: '{}'
+PASS tool-multiturn (10.0s) second turn OK (151 chars)
+PASS streaming-sse (1.3s) 16 chunks, 13 chars streamed
+PASS vision-image (5.0s) vision reply: 'The image is a solid red square with no '
+PASS long-ctx-65k (27.0s) ctx 17651 tok, found codeword in 27s
+PASS sampling-greedy (8.0s) greedy OK
+
+=== 8/8 PASS ===

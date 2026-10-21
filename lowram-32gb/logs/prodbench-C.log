@@ -1,0 +1,10 @@
+=== 8/8 PASS ===
+[C-prod] prose: 179 tok | 13.4 t/s | 13.3s
+[C-prod] facts: 210 tok | 17.3 t/s | 12.1s
+[C-prod] code: 447 tok | 14.1 t/s | 31.7s
+[C-prod] MEAN: 14.9 t/s
+[C-prod-run2] prose: 205 tok | 5.3 t/s | 38.8s
+[C-prod-run2] facts: 196 tok | 10.8 t/s | 18.1s
+[C-prod-run2] code: 600 tok | 2.6 t/s | 234.3s
+[C-prod-run2] MEAN: 6.2 t/s
+[C] SCORE 12/12  (94 tokens, 75s)
